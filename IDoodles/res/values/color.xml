@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <drawable name="dialog_background">#00000000</drawable>
+    
+    <drawable name="dialog_btn">#40a4a4a4</drawable>
+    
+    <drawable name="gap_view_color">#cca4a4a4</drawable>
+    
+</resources>

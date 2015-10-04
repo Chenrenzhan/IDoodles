@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.doodles.MainActivity" >
+
+    
+    
+    <LinearLayout 
+        android:id="@+id/option"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#004c4c4c"
+        >
+        <ImageButton
+            android:id="@+id/new_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/newbtn"
+             />
+        
+        <ImageButton
+             android:id="@+id/save_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/save"
+             />
+        <ImageButton
+             android:id="@+id/paint_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/paint"
+             />
+        <ImageButton
+             android:id="@+id/color_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/color"
+             />
+        <ImageButton
+             android:id="@+id/undo_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/undo"
+             />
+        <ImageButton
+             android:id="@+id/redo_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/redo"
+             />
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/canvas_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/option"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        >
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>

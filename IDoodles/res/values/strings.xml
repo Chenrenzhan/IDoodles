@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iDoodles</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="color_pick_title">选择画笔颜色</string>
+    
+    <string name="paint_choose_title">请选择画笔</string>
+    
+    <string name="save_bitmap">已保存绘画图片</string>
+    <string name="fail_save_bitmap">找不到SD卡，保存失败</string>
+
+</resources>

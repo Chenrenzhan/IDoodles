@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginBottom="10dp"
+    >
+
+    
+
+    <LinearLayout
+        android:id="@+id/chosen_paint_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        
+        <ImageView 
+            android:id="@+id/chosen_paint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:src="@drawable/crayon_paint"
+            />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok_btn"
+      android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_btn"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+          android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_btn"
+        android:text="取消" />
+
+    <LinearLayout
+        android:id="@+id/size_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ok_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <SeekBar
+            android:id="@+id/paint_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/size_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="20" />
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/gap_view3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/size_linear_layout"
+        android:background="@drawable/gap_view_color"
+        />
+    
+    <View 
+        android:id="@+id/gap_view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/chosen_paint_layout"
+        android:background="@drawable/gap_view_color"
+        />
+    
+     <View 
+        android:id="@+id/gap_view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/size_linear_layout"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/gap_view_color"
+        />
+
+    <ListView
+        android:id="@+id/paint_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gap_view2"
+         android:layout_below="@id/gap_view1"
+        android:layout_alignParentLeft="true"
+        android:focusableInTouchMode="true"  
+        android:paddingTop="2dp"
+       >
+    </ListView>
+    
+    
+
+</RelativeLayout>
